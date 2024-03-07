@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ad=z@2(!8iyf6=sq1zc=5pw1)_*4^v)#c&3$q7*99lvkdjh9z3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['tpatel15.pythonanywhere.com']
+ALLOWED_HOSTS = ['tpatel15.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -117,6 +117,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = 'payroll/static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -125,7 +126,4 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # default static files settings for PythonAnywhere.
 # see https://help.pythonanywhere.com/pages/DjangoStaticFiles for more info
-MEDIA_ROOT = '/home/tpatel15/paycheck/media'
-MEDIA_URL = '/media/'
-STATIC_ROOT = '/home/tpatel15/paycheck/static'
-STATIC_URL = '/static/'
+

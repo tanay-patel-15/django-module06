@@ -1,51 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Paycheck Details</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f9f9f9;
-    }
-    .container {
-        width: 50%;
-        margin: 20px auto;
-        border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        padding: 20px;
-    }
-    h1 {
-        text-align: center;
-        color: #333;
-        margin-bottom: 30px;
-    }
-    .details table {
-        width: 100%;
-        border-collapse: collapse;
-    }
-    .details table tr td {
-        padding: 10px;
-        border-bottom: 1px solid #ccc;
-        color: #555;
-    }
-    .details table tr:last-child td {
-        border-bottom: none;
-    }
-    .details table tr td:first-child {
-        font-weight: bold;
-    }
-    .details table tr td:last-child {
-        text-align: right;
-    }
-    .highlight {
-        background-color: #ffecb3;
-    }
-</style>
+<link rel="stylesheet" type = "text/css" href = "{% static 'payroll.css' %}">
+
 </head>
 <body>
 
@@ -79,7 +41,13 @@
             </tr>
         </table>
     </div>
+
+<div style="text-align: center;">
+<img src="https://www.shutterstock.com/image-photo/portrait-happy-young-businessman-throwing-260nw-1070556401.jpg">
 </div>
+
+</div>
+
 
 </body>
 </html>
